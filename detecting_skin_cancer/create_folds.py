@@ -3,7 +3,7 @@ import pandas as pd
 from sklearn import model_selection
 
 if __name__ =="__main__":
-    input_path = "Desktop/proyecto-ML/detecting_skin_cancer"
+    input_path = "."
     df = pd.read_csv(os.path.join(input_path, "train.csv"))
     df["Kfold"] = -1
     df = df.sample(frac=1).reset_index(drop=True)
